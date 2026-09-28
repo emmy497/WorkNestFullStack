@@ -91,6 +91,99 @@ const HowSection = () => {
       </div>
 
       {/*The opposite of shouting into a void. */}
+
+      <section className="mt-16 lg:mt-[155px] mb-16 lg:mb-[140px] px-4 sm:px-8 md:px-16 lg:px-[100px]">
+        {/* Section heading */}
+        <div className="mx-auto mb-10 lg:mb-[68px] flex h-auto w-full max-w-[570px] flex-col gap-4 lg:gap-[34px]">
+          <div className="text-center font-['Bricolage_Grotesque'] font-bold text-3xl sm:text-4xl lg:text-[46px] leading-tight lg:leading-[47.84px] tracking-tight lg:tracking-[-1.29px] text-[#161320]">
+            The opposite of shouting into a void.
+          </div>
+
+          <div className="text-center font-['Inter'] font-normal text-base lg:text-[18px] leading-relaxed lg:leading-[28.8px] text-[#4B4757]">
+            A job board hosts a form and hopes for the best. WorkNest sits
+            between you and the company and does the work that usually goes
+            missing.
+          </div>
+        </div>
+
+        {/* Two columns on desktop, stacked on mobile */}
+        <div className="flex flex-col lg:flex-row gap-6 lg:gap-[34px]">
+          {/* Left — the tall navy card */}
+          <div className="w-full min-w-0 flex-1 rounded-[24px] lg:rounded-[31.22px] bg-[#140A28] p-6 lg:pt-[32.34px] lg:pb-[33.45px] lg:px-[33.45px]">
+            <div className="mb-6 lg:mb-[34px] font-['Inter'] font-normal text-[11px] lg:text-[12.82px] leading-relaxed lg:leading-[19.24px] tracking-[0.77px] text-[#FFC93C]">
+              // read by a human
+            </div>
+
+            <div className="font-['Bricolage_Grotesque'] font-bold text-2xl sm:text-3xl lg:text-[33.45px] leading-tight lg:leading-[50.18px] tracking-tight lg:tracking-[-0.67px] text-white">
+              Every application is actually reviewed.
+            </div>
+
+            <div className="mt-6 lg:mt-[33px] font-['Inter'] font-normal text-sm lg:text-[16.73px] leading-relaxed lg:leading-[26.43px] text-[rgba(255,255,255,0.66)]">
+              Not parsed by an ATS hunting keywords — read, scored, and
+              shortlisted by someone whose whole job is finding the right people
+              for the role.
+            </div>
+          </div>
+
+          {/* Right — one wide card above two side-by-side ones */}
+          <div className="flex w-full min-w-0 flex-1 flex-col gap-4 lg:gap-[22px]">
+            {/* You always know where you stand */}
+            <div className="flex h-auto flex-col gap-[7.81px] rounded-[24px] lg:rounded-[31.22px] border-[1.12px] border-[#ECEBF0] py-4 lg:py-[16.73px] px-6 lg:px-[33.45px]">
+              <div className="font-['Inter'] font-normal text-[11px] lg:text-[12.82px] leading-relaxed lg:leading-[19.24px] tracking-[0.77px] text-[#6D4AFF]">
+                // no ghosting
+              </div>
+
+              <div className="font-['Bricolage_Grotesque'] font-bold text-lg lg:text-[23.42px] leading-snug lg:leading-[35.13px] tracking-tight lg:tracking-[-0.47px] text-[#161320]">
+                You always know where you stand
+              </div>
+
+              <div className="font-['Inter'] font-normal text-sm lg:text-[16.17px] leading-relaxed lg:leading-[25.55px] text-[#4B4757]">
+                Your status moves in the open — submitted, reviewed,
+                shortlisted, interviewing — and you hear from us either way.
+              </div>
+
+              {/* Progress bars. flex-1 lets the five share the width evenly
+            at any screen size, rather than a fixed pixel width each. */}
+              <div className="flex w-full gap-[6.69px] pt-[12.27px]">
+                <div className="h-[5.58px] flex-1 rounded-[3.35px] bg-[#6D4AFF]" />
+                <div className="h-[5.58px] flex-1 rounded-[3.35px] bg-[#6D4AFF]" />
+                <div className="h-[5.58px] flex-1 rounded-[3.35px] bg-[#E0952A]" />
+                <div className="h-[5.58px] flex-1 rounded-[3.35px] bg-[#F2F1F6]" />
+                <div className="h-[5.58px] flex-1 rounded-[3.35px] bg-[#F2F1F6]" />
+              </div>
+            </div>
+
+            {/* The two smaller cards */}
+            <div className="flex flex-col sm:flex-row gap-4 lg:gap-[22px]">
+              {/* 72% */}
+              <div className="h-auto w-full flex-1 rounded-[24px] lg:rounded-[31.22px] bg-[#FFC93C] p-6 lg:p-[33.45px]">
+                <div className="mb-6 lg:mb-[44px] font-['Bricolage_Grotesque'] font-extrabold text-4xl lg:text-[49.07px] leading-tight lg:leading-[49.07px] tracking-tight lg:tracking-[-1.47px] text-[#463400]">
+                  72%
+                </div>
+
+                <div className="font-['Inter'] font-medium text-sm lg:text-[14.5px] leading-relaxed lg:leading-[22.91px] text-[#463400]">
+                  of shortlisted candidates reach an interview
+                </div>
+              </div>
+
+              {/* Real, open roles */}
+              <div className="h-auto w-full flex-1 rounded-[24px] lg:rounded-[31.22px] border-[1.12px] border-[#ECEBF0] p-6 lg:pt-[32.34px] lg:pr-[33.45px] lg:pb-[54.74px] lg:pl-[33.45px]">
+                <div className="mb-3 lg:mb-[13px] font-['Inter'] font-normal text-[11px] lg:text-[12.82px] leading-relaxed lg:leading-[19.24px] tracking-[0.77px] text-[#6D4AFF]">
+                  // live roles only
+                </div>
+
+                <div className="mb-[6px] font-['Bricolage_Grotesque'] font-bold text-lg lg:text-[20.07px] leading-snug lg:leading-[30.11px] tracking-tight lg:tracking-[-0.4px] text-[#161320]">
+                  Real, open roles
+                </div>
+
+                <div className="font-['Inter'] font-normal text-sm lg:text-[15.05px] leading-relaxed lg:leading-[23.79px] text-[#4B4757]">
+                  If it's listed, a team is waiting to fill it.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 };
